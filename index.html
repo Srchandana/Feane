@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feane</title>
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Ion Icons CDN Link ( Link in Descripton ) -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <body>
+
+        <!--------- Home Section Start  -------->
+        <section class="home_section">
+            <div class="navbar">
+                <div class="logo">
+                    <p>Feane</p>
+                </div>
+                <div class="nav_links">
+                    <div class="links">
+                        <a href="#">Home</a>
+                        <a href="#">Menu</a>
+                        <a href="#">About</a>
+                        <a href="#">Book Table</a>
+                    </div>
+                    <div class="user_details">
+                        <ion-icon name="people"></ion-icon>
+                        <ion-icon name="cart"></ion-icon>
+                        <ion-icon name="search"></ion-icon>
+                        <a href="#" class="order_online_btn btn">Order Online</a>
+                    </div>
+                </div>
+            </div>
+            <div class="home_container">
+                <h3 class="heading">Fast Food Restaurant</h3>
+                <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nihil. Labore dolorem animi pariatur quaerat deserunt id consequuntur, architecto obcaecati, totam veritatis necessitatibus ea!</p>
+                <a href="#" class="callTo_action btn">Order Now</a>
+            </div>
+        </section>
+
+
+        <!--------- Order Cards Start  -------->
+        <section class="order_cards">
+            <div class="card">
+                <div class="img">
+                    <img src="./img/o1.jpg" alt="">
+                </div>
+                <div class="order_details">
+                    <p class="heading">Tasty Thursday</p>
+                    <p class="price"><span>20%</span> Off</p>
+                    <a href="#" class="order_now btn">Order Now
+                        <ion-icon name="cart"></ion-icon>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="./img/o2.jpg" alt="">
+                </div>
+                <div class="order_details">
+                    <p class="heading">Pizza Days</p>
+                    <p class="price"><span>15%</span> Off</p>
+                    <a href="#" class="order_now btn">Order Now
+                        <ion-icon name="cart"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!--------- Our Menu Start  -------->
+        <section class="our_menu">
+            <h3 class="ourMenu_heading">Our Menu</h3>
+            <div class="navigation">
+                <p class="list active" data-filter="All">All</p>
+                <p class="list" data-filter="Burger">Burger</p>
+                <p class="list" data-filter="Pizza">Pizza</p>
+                <p class="list" data-filter="Pasta">Pasta</p>
+                <p class="list" data-filter="Fries">Fries</p>
+            </div>
+            <div class="item_cards" >
+                <div class="item_card" data-item="Pizza">
+                    <div class="item_img">
+                        <img src="./img/f1.png">
+                    </div>
+                    <div class="item_details">
+                        <h4 class="item_heading">Deliciour Pizza</h4>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsam ratione minus reprehenderit voluptatum?</p>
+                        <div class="price_cart">
+                            <p class="price">$20</p>
+                            <ion-icon name="cart"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_card" data-item="Burger">
+                    <div class="item_img">
+                        <img src="./img/f2.png">
+                    </div>
+                    <div class="item_details">
+                        <h4 class="item_heading">Deliciour Burger</h4>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsam ratione minus reprehenderit voluptatum?</p>
+                        <div class="price_cart">
+                            <p class="price">$15</p>
+                            <ion-icon name="cart"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_card" data-item="Pizza">
+                    <div class="item_img">
+                        <img src="./img/f3.png">
+                    </div>
+                    <div class="item_details">
+                        <h4 class="item_heading">Deliciour Pizza</h4>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsam ratione minus reprehenderit voluptatum?</p>
+                        <div class="price_cart">
+                            <p class="price">$17</p>
+                            <ion-icon name="cart"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_card" data-item="Pasta">
+                    <div class="item_img">
+                        <img src="./img/f4.png">
+                    </div>
+                    <div class="item_details">
+                        <h4 class="item_heading">Deliciour Pasta</h4>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsam ratione minus reprehenderit voluptatum?</p>
+                        <div class="price_cart">
+                            <p class="price">$18</p>
+                            <ion-icon name="cart"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_card" data-item="Fries">
+                    <div class="item_img">
+                        <img src="./img/f5.png">
+                    </div>
+                    <div class="item_details">
+                        <h4 class="item_heading">Deliciour Fries</h4>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsam ratione minus reprehenderit voluptatum?</p>
+                        <div class="price_cart">
+                            <p class="price">$15</p>
+                            <ion-icon name="cart"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_card" data-item="Pizza">
+                    <div class="item_img">
+                        <img src="./img/f6.png">
+                    </div>
+                    <div class="item_details">
+                        <h4 class="item_heading">Deliciour Pizza</h4>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsam ratione minus reprehenderit voluptatum?</p>
+                        <div class="price_cart">
+                            <p class="price">$19</p>
+                            <ion-icon name="cart"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_card" data-item="Burger">
+                    <div class="item_img">
+                        <img src="./img/f7.png">
+                    </div>
+                    <div class="item_details">
+                        <h4 class="item_heading">Deliciour Burger</h4>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsam ratione minus reprehenderit voluptatum?</p>
+                        <div class="price_cart">
+                            <p class="price">$14</p>
+                            <ion-icon name="cart"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_card" data-item="Burger">
+                    <div class="item_img">
+                        <img src="./img/f8.png">
+                    </div>
+                    <div class="item_details">
+                        <h4 class="item_heading">Deliciour Burger</h4>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsam ratione minus reprehenderit voluptatum?</p>
+                        <div class="price_cart">
+                            <p class="price">$17</p>
+                            <ion-icon name="cart"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_card" data-item="Pasta">
+                    <div class="item_img">
+                        <img src="./img/f9.png">
+                    </div>
+                    <div class="item_details">
+                        <h4 class="item_heading">Deliciour Pasta</h4>
+                        <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia ipsam ratione minus reprehenderit voluptatum?</p>
+                        <div class="price_cart">
+                            <p class="price">$10</p>
+                            <ion-icon name="cart"></ion-icon>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--------- Pizza Poster Start  -------->
+        <section class="poster">
+            <div class="poster_img">
+                <img src="./img/about-img.png" alt="">
+            </div>
+            <div class="poster_details">
+                <h3 class="heading">We Are Feane</h3>
+                <p class="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut accusamus esse corrupti quas quam, facere beatae possimus necessitatibus nihil, quaerat hic, ipsum omnis iure. Rem, illo saepe.</p>
+                <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure perspiciatis totam, deleniti esse accusamus itaque. Esse exercitationem cupiditate omnis totam nobis.</p>
+                <a href="#" class="poster_btn btn">Read More</a>
+            </div>
+        </section>
+
+        <!--------- Booking Form Start  -------->
+        <section class="table_booking">
+            <h3 class="booking_heading">Book A Table Now</h3>
+                <div class="booking_container">
+                    <form action="#" onsubmit="submit_func()" class="booking_form">
+                        <div class="full_name">
+                            <div class="first">
+                                <label for="#" class="title">First*</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="last">
+                                <label for="#" class="title">Last*</label>
+                                <input type="text" required>
+                            </div>
+                        </div>
+                        <div class="email_phone">
+                            <div class="email">
+                                <label for="#" class="title">Email*</label>
+                                <input type="email" required>
+                            </div>
+                            <div class="phone">
+                                <label for="#" class="title">Phone*</label>
+                                <input type="text" required>
+                            </div>
+                        </div>
+                        <div class="date_time">
+                            <div class="date">
+                                <label for="#" class="title">Date*</label>
+                                <input type="date" required>
+                            </div>
+                            <div class="time">
+                                <label for="#" class="title">Time*</label>
+                                <input type="time" required>
+                            </div>
+                        </div>
+                        <div class="person">
+                            <label for="#" class="title">How Many Person*</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="submit_btn">
+                            <button type="submit" class="booking_btn btn">Book Now</button>
+                        </div>
+                    </form>
+                    <div class="booking_img">
+                        <img src="./img/f7.png" alt="Pizza Image">
+                    </div>
+                </div>
+        </section>
+
+
+        <!--------- Testimonials Section Start  -------->
+        <section class="testimonials">
+            <h3 class="testi_heading">What Our Happy Clients Says</h3>
+            <div class="testi_container">
+                <div class="navigation">
+                    <span class="indicator active"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                    <span class="indicator"></span>
+                </div>
+
+                <div class="testi_wrapper">
+                    <div class="card">
+                        <img src="./img/quote.png" alt="">
+                        <p class="para">Ordered a Pizza, Half everything and half pepperoni, Mushrooms and Cheese. The Best Everything Pizza I have ever eaten. Thanks so much Feane's Pizza</p>
+                        <div class="person">
+                            <img src="./img/c1.png" alt="Clien Photo">
+                            <div class="name_desig">
+                                <p class="name">Someone Famous</p>
+                                <p class="desig">Web Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/quote.png" alt="">
+                        <p class="para">Ordered a Pizza, Half everything and half pepperoni, Mushrooms and Cheese. The Best Everything Pizza I have ever eaten. Thanks so much Feane's Pizza</p>
+                        <div class="person">
+                            <img src="./img/c2.png" alt="Clien Photo">
+                            <div class="name_desig">
+                                <p class="name">Someone Famous</p>
+                                <p class="desig">Web Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/quote.png" alt="">
+                        <p class="para">Ordered a Pizza, Half everything and half pepperoni, Mushrooms and Cheese. The Best Everything Pizza I have ever eaten. Thanks so much Feane's Pizza</p>
+                        <div class="person">
+                            <img src="./img/c3.png" alt="Clien Photo">
+                            <div class="name_desig">
+                                <p class="name">Someone Famous</p>
+                                <p class="desig">Web Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/quote.png" alt="">
+                        <p class="para">Ordered a Pizza, Half everything and half pepperoni, Mushrooms and Cheese. The Best Everything Pizza I have ever eaten. Thanks so much Feane's Pizza</p>
+                        <div class="person">
+                            <img src="./img/c4.png" alt="Clien Photo">
+                            <div class="name_desig">
+                                <p class="name">Someone Famous</p>
+                                <p class="desig">Web Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/quote.png" alt="">
+                        <p class="para">Ordered a Pizza, Half everything and half pepperoni, Mushrooms and Cheese. The Best Everything Pizza I have ever eaten. Thanks so much Feane's Pizza</p>
+                        <div class="person">
+                            <img src="./img/c5.png" alt="Clien Photo">
+                            <div class="name_desig">
+                                <p class="name">Someone Famous</p>
+                                <p class="desig">Web Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="./img/quote.png" alt="">
+                        <p class="para">Ordered a Pizza, Half everything and half pepperoni, Mushrooms and Cheese. The Best Everything Pizza I have ever eaten. Thanks so much Feane's Pizza</p>
+                        <div class="person">
+                            <img src="./img/c6.png" alt="Clien Photo">
+                            <div class="name_desig">
+                                <p class="name">Someone Famous</p>
+                                <p class="desig">Web Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--------- Footer Section Start  -------->
+        <section class="footer">
+            <div class="footer_details">
+                <div class="contact_us">
+                    <h3 class="heading">Contact Us</h3>
+                    <ul>
+                        <li>
+                            <ion-icon name="location"></ion-icon>
+                            <p>Location</p>
+                        </li>
+                        <li>
+                            <ion-icon name="call"></ion-icon>
+                            <p>Call +91 987654321</p>
+                        </li>
+                        <li>
+                            <ion-icon name="mail"></ion-icon>
+                            <p>Crown@gmail.com</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="middle_contact">
+                    <h3 class="heading">Feane</h3>
+                    <p>Necessary, Making this the first true generator on the internet. It uses a dictionary of over 200 latin words.</p>
+                    <div class="social_links">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <ion-icon name="logo-instagram"></ion-icon>
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                        <ion-icon name="logo-twitter"></ion-icon>
+                        <ion-icon name="logo-github"></ion-icon>
+                    </div>
+                </div>
+                <div class="opening_hours">
+                    <h3 class="heading">Opening Hours</h3>
+                    <p>Everyday <br>10:00 Am To 10:00 Pm</p>
+                </div>
+            </div>
+            <div class="footer_tag">
+                <p class="tag_line">@2023 All Rights Reserved to Crown Coder | This Template is made with Love and Affection.</p>
+            </div>
+        </section> 
+
+
+        <!--------- Scroll To Top Button  -------->
+        <div class="scroll_toTop">
+            <ion-icon name="arrow-up"></ion-icon>
+        </div>
+
+
+
+        <script src="./main.js"></script>
+    </body>
+</html>

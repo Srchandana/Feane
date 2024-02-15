@@ -1,0 +1,612 @@
+/*        Font Name - Poppins          */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap');
+
+/*        Font Name - Kaushan Script           */
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+:root{
+    --yellow : #ffbe33;
+    --black : #222832;
+    --white : #f1f2f3;
+    --hover : #ffa908;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* --------------- Home Section Css Start -------------- */
+
+.home_section{
+    width: 100%;
+    height: 100vh;
+    padding: 0 10%;
+    background-image: url(./img/hero-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+.home_section .navbar{
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.home_section .navbar .logo p{
+    font-size: 24px;
+    font-family: Kaushan Script;
+}
+.home_section .navbar .nav_links{
+    display: flex;
+    align-items: center;
+}
+.navbar .nav_links .links{
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+.navbar .nav_links .links a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 12px;
+    transition: all .6s ease;
+}
+.navbar .nav_links .links a:hover,
+.navbar .nav_links .user_details ion-icon:hover{
+    color: var(--hover);
+}
+.navbar .nav_links .user_details{
+    display: flex;
+    align-items: center;
+}
+.navbar .nav_links .user_details ion-icon{
+    font-size: 19px;
+    margin: 0 6px;
+    transition: all .6s ease;
+    cursor: pointer;
+}
+.btn{
+    padding: 9px 24px;
+    border-radius: 20px;
+    background-color: var(--yellow);
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    transition: all .6s ease;
+}
+.order_online_btn{
+    margin-left: 15px;
+}
+.btn:hover{
+    background-color: var(--hover);
+}
+
+.home_section .home_container{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.home_section .home_container .heading{
+    font-size: 45px;
+    font-family: Kaushan Script;
+    font-weight: 400;
+}
+.home_section .home_container .para{
+    font-size: 14px;
+    font-weight: 300;
+    max-width: 56%;
+    opacity: .9;
+    line-height: 26px;
+    margin: 12px 0 35px 0;
+}
+.callTo_action{
+    padding: 10px 28px;
+    font-size: 15px;
+}
+
+
+
+/* --------------- Order Cards Css Start -------------- */
+
+.order_cards{
+    width: 100%;
+    height: auto;
+    padding: 80px 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+.order_cards .card{
+    padding: 20px;
+    background-color: var(--black);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+}
+.order_cards .card .img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 5px solid var(--yellow);
+    overflow: hidden;
+    margin-right: 40px;
+    cursor: pointer;
+}
+.order_cards .card .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .4s ease;
+}
+.order_cards .card .img img:hover{
+    transform: scale(1.12);
+}
+.order_cards .card .order_details .heading{
+    font-size: 22px;
+    font-family: Kaushan Script;
+}
+.order_cards .card .order_details .price{
+    font-size: 18px;
+    margin: 8px 0 20px 0;
+    font-family: Kaushan Script;
+}
+.card .order_details .price span{
+    font-size: 25px;
+}
+.card .order_details .order_now{
+    display: flex;
+    align-items: center;
+}
+.card .order_details .order_now .ion-icon{
+    font-size: 27px;
+    margin-left: 5px;
+}
+
+
+
+
+/* --------------- Our menu Css Start -------------- */
+
+.our_menu{
+    width: 100%;
+    height: auto;
+    padding: 40px 10% 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.our_menu .ourMenu_heading{
+    font-size: 28px;
+    font-family: Kaushan Script;
+    margin-bottom: 50px;
+}
+.our_menu .navigation{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.our_menu .navigation .list{
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 24px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    position: relative;
+    transition: all .6s ease;
+}
+.our_menu .navigation .list.active::after{
+    position: absolute;
+    content: ' ';
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background-color: var(--black);
+}
+.our_menu .item_cards{
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+}
+.our_menu .item_cards .item_card{
+    background-color: var(--black);
+    border-radius: 10px;
+    box-shadow: -5px 10px 39px rgba(51, 51, 51, 0.13);
+    overflow: hidden;
+}
+.our_menu .item_cards .item_card.hide{
+    display: none;
+}
+.item_cards .item_card .item_img{
+    width: 100%;
+    height: 200px;
+    border-bottom-left-radius: 30px;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item_cards .item_card .item_img img{
+    width: auto;
+    height: 100%;
+    padding: 35px;
+    transition: all .3s ease;
+}
+.item_cards .item_card:hover .item_img img{
+    transform: scale(1.10);
+}
+.item_cards .item_card .item_details{
+    padding: 20px;
+    color: #fff;
+}
+.item_cards .item_card .item_details .item_heading{
+    font-size: 17px;
+    font-weight: 500;
+}
+.item_cards .item_card .item_details .para{
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px;
+    opacity: .8;
+    margin: 6px 0 17px 0;
+}
+.item_cards .item_card .item_details .price_cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.item_card .item_details .price_cart .price{
+    font-size: 15px;
+    font-weight: 500;
+}
+.item_card .item_details .price_cart ion-icon{
+    padding: 8px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    color: var(--black);
+    cursor: pointer;
+    font-size: 20px;
+    transition: all .5s ease;
+}
+.item_card .item_details .price_cart ion-icon:hover{
+    background-color: var(--hover);
+}
+
+
+
+
+
+/* --------------- Pizza Poster Css Start -------------- */
+
+.poster{
+    width: 100%;
+    height: auto;
+    padding: 70px 10%;
+    background-color: var(--black);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.poster .poster_img{
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+}
+.poster .poster_img img{
+    width: 70%;
+}
+.poster .poster_details{
+    width: 50%;
+}
+.poster .poster_details .heading{
+    font-size: 31px;
+    font-family: Kaushan Script;
+    font-weight: 500;
+}
+.poster .poster_details p{
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 24px;
+    opacity: .8;
+    margin: 10px 0 20px 0;
+}
+.poster .poster_details .para2{
+    margin-bottom: 30px;
+}
+
+
+
+/* --------------- Booking Form Css Start -------------- */
+
+.table_booking{
+    width: 100%;
+    height: auto;
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.table_booking .booking_heading{
+    font-size: 30px;
+    font-family: Kaushan Script;
+    font-weight: 500;
+    margin-bottom: 50px;
+}
+.table_booking .booking_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.table_booking .booking_container .booking_form{
+    width: 60%;
+}
+.booking_container .booking_form input{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid rgba(51, 51, 51, 0.773);
+    padding: 0 10px;
+    outline: none;
+    transition: all .5s ease;
+}
+.booking_container .booking_form input:focus{
+    border: 2px solid var(--yellow);
+}
+.booking_container .booking_form .title{
+    font-size: 14px;
+    color: var(--black);
+    font-weight: 500;
+    margin-bottom: 4px;
+    padding-left: 5px;
+}
+.booking_container .booking_form > div{
+    margin-bottom: 10px;
+}
+.booking_container .booking_form .full_name,
+.booking_container .booking_form .email_phone,
+.booking_container .booking_form .date_time{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 0 40px;
+}
+.booking_form .submit_btn{
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    border-radius: 0px;
+}
+.booking_form .submit_btn .booking_btn{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: none;
+}
+.table_booking .booking_container .booking_img{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+.table_booking .booking_container .booking_img img{
+    width: 90%;
+}
+
+
+
+
+/* --------------- Testimonials Section Css Start -------------- */
+
+.testimonials{
+    width: 100%;
+    height: auto;
+    padding: 80px 10%;
+    text-align: center;
+}
+.testimonials .testi_heading{
+    font-size: 30px;
+    font-family: Kaushan Script;
+    font-weight: 500;
+    margin-bottom: 80px;
+}
+.testimonials .testi_container{
+    width: 1080px;
+    height: 450px;
+    /* background-color: red; */
+    position: relative;
+    overflow: hidden;
+}
+.testimonials .testi_container .testi_wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .5s ease;
+}
+.testimonials .testi_container .testi_wrapper .card{
+    width: 310px;
+    height: auto;
+    margin: 0 25px;
+    border-radius: 8px;
+    box-shadow: -5px 10px 31px rgba(51, 51, 51, 0.108);
+    padding: 30px 25px;
+}
+.testimonials .testi_container .testi_wrapper .card > img{
+    width: 40px;
+    transform: translateX(90px);
+    margin-bottom: 5px;
+}
+.testimonials .testi_container .testi_wrapper .card > p{
+    font-size: 14px;
+    font-style: italic;
+    opacity: .9;
+    line-height: 23px;
+    margin-bottom: 25px;
+}
+.testi_container .testi_wrapper .card .person .name_desig .name{
+    font-weight: 500;
+    font-size: 18px;
+}
+.testi_container .testi_wrapper .card .person .name_desig .desig{
+    font-size: 14px;
+    font-weight: 500;
+    opacity: .9;
+}
+.testimonials .testi_container .testi_wrapper .card .person img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid var(--black);
+}
+.testi_container .navigation{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testi_container .navigation .indicator{
+    width: 16px;
+    height: 16px;
+    background-color: var(--black);
+    border-radius: 50px;
+    margin: 0 4px;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.testi_container .navigation .indicator.active{
+    width: 35px;
+    background-color: var(--yellow);
+}
+
+
+
+
+
+/* --------------- Footer Section Css Start -------------- */
+
+.footer{
+    width: 100%;
+    height: auto;
+    padding: 80px 10%;
+    background-color: var(--black);
+    color: #fff;
+    border-radius: 40px 40px 0 0px;
+}
+.footer .footer_details{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-gap: 30px;
+}
+.footer .footer_details > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+.footer .footer_details .heading{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: Kaushan Script;
+    margin-bottom: 25px;
+}
+.footer .footer_details p{
+    font-size: 14px;
+    line-height: 22px;
+    opacity: .9;
+    text-align: center;
+}
+.footer .footer_details .contact_us ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.footer .footer_details .contact_us ul li ion-icon{
+    margin-right: 7px;
+}
+.footer_details .middle_contact .social_links{
+    margin-top: 24px;
+}
+.footer_details .middle_contact .social_links ion-icon{
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.footer_details .opening_hours p{
+    line-height: 30px;
+}
+.footer .footer_tag{
+    border-top: 2px solid #fff;
+    border-radius: 20px;
+    text-align: center;
+}
+.footer .footer_tag .tag_line{
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+
+
+/* --------------- Scroll to Top Button -------------- */
+
+body{
+    position: relative;
+}
+.scroll_toTop{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 40px;
+    bottom: 60px;
+    background-color: var(--yellow);
+    border-radius: 50%;
+    box-shadow: -5px 6px 20px rgba(51, 51, 51, 0.212);
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+.scroll_toTop.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.scroll_toTop ion-icon{
+    font-size: 23px;
+}
